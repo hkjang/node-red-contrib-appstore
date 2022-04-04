@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-appstore",
+  "version": "0.17.0",
+  "description": "Node-RED node for appstore",
+  "main": "node.js",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\" --timeout 3000"
+  },
+  "node-red": {
+    "nodes": {
+      "appstore": "node.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/hkjang/node-red-contrib-appstore/issues"
+  },
+  "homepage": "https://github.com/hkjang/node-red-contrib-appstore#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkjang/node-red-contrib-appstore.git"
+  },
+  "keywords": [
+    "node-red-contrib-contribgen", 
+    "node-red", 
+    "appstore",
+    "app-store-scraper"
+
+  ],
+  "dependencies": {
+    "app-store-scraper": "^0.17.0"
+  },
+  "license": "MIT"
+}
