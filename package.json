@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-appstore",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "description": "Node-RED node for appstore",
   "main": "node.js",
   "scripts": {

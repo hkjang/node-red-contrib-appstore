@@ -25,12 +25,32 @@ You can make this json string into a flow by using the node-red flow import func
 
 ## Params
 ```javascript
-msg.func = 'reviews';
-msg.id  = '553834731'
+msg.func = 'app';
+// msg.func = 'list';
+// msg.func = 'search';
+// msg.func = 'privacy';
+// msg.func = 'developer';
+// msg.func = 'suggest';
+// msg.func = 'similar';
+// msg.func = 'reviews';
+// msg.func = 'ratings';
 
-// msg.func = 'app';
-// msg.appId = 'com.google.android.apps.translate'
+msg.appId  = '553834731';
+// msg.devId  = '284882218';
 
+msg.ratings  = true;
 
+// msg.collection = store.collection.TOP_FREE_IPAD,
+// msg.category = store.category.GAMES_ACTION,
+// msg.num = 2
+
+// msg.term = 'panda';
+// msg.num = 2;
+// msg.page = 3;
+// msg.country  = 'us';
+// msg.lang = 'lang';
+
+// msg.appId  = 'com.midasplayer.apps.candycrushsaga';
+// msg.page = 1;
 return msg;
 ```

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "149a3fbff7419ed6",
+    "type": "appstore",
+    "z": "30223fe28ce8edd9",
+    "name": "",
+    "appId": "",
+    "x": 450,
+    "y": 360,
+    "wires": [
+      [
+        "24547b4d614543f3"
+      ]
+    ]
+  },
+  {
+    "id": "c1610dbc48a1fcd4",
+    "type": "inject",
+    "z": "30223fe28ce8edd9",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 360,
+    "wires": [
+      [
+        "e2f42f2f60516792"
+      ]
+    ]
+  },
+  {
+    "id": "e2f42f2f60516792",
+    "type": "function",
+    "z": "30223fe28ce8edd9",
+    "name": "",
+    "func": "msg.func = 'app';\n// msg.func = 'list';\n// msg.func = 'search';\n// msg.func = 'privacy';\n// msg.func = 'developer';\n// msg.func = 'suggest';\n// msg.func = 'similar';\n// msg.func = 'reviews';\n// msg.func = 'ratings';\n\nmsg.appId  = '553834731';\n// msg.devId  = '284882218';\n\nmsg.ratings  = true;\n\n// msg.collection = store.collection.TOP_FREE_IPAD,\n// msg.category = store.category.GAMES_ACTION,\n// msg.num = 2\n\n// msg.term = 'panda';\n// msg.num = 2;\n// msg.page = 3;\n// msg.country  = 'us';\n// msg.lang = 'lang';\n  \n// msg.appId  = 'com.midasplayer.apps.candycrushsaga';\n// msg.page = 1;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 300,
+    "y": 360,
+    "wires": [
+      [
+        "149a3fbff7419ed6"
+      ]
+    ]
+  },
+  {
+    "id": "24547b4d614543f3",
+    "type": "debug",
+    "z": "30223fe28ce8edd9",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 610,
+    "y": 360,
+    "wires": []
+  }
+]
